@@ -12,6 +12,7 @@
       font-align: center;
       color: green;
       background-color: rgb(255, 214, 255);
+      margin-top: 50px;
 
     }
 
@@ -21,6 +22,9 @@
   overflow: hidden;
   background-color: #333;
   font-family: Arial;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 /* Links inside the navbar */
@@ -87,7 +91,7 @@
 }
 
 #navbar {
-            position: absolute;
+            position: fixed;
             top: 220px;
         }
 
@@ -101,32 +105,52 @@
 .links a:active {		user is interacting with this element
                 background-color: rgb(255, 214, 255);
 } 
-.links a:focus {		tabbed focus
-                background-color: rgb(255, 214, 255);
-} 
+
 .links{
   overflow: hidden;
   border: 1px  solid   red;	
   margin: auto;
   width: 200px;
-  height: 200px;
+  height: 900px;
   float: left;
   clear: left;
   
 }
-.center_text{
-  width: 500px;
-  height: 400px;
+.center_text {
+  
   float: left;
- 
+  
+  border: 3px solid green;
+  padding: 10px;
+  width:300px;
+  height:900px;
+  overflow: scroll;
+  
+}
+.right{
+  overflow: hidden;
+  border: 1px  solid   red;	
+  margin: auto;
+  width: 200px;
+  height: 900px;
+  float: left;
+  clear: right;
+  background-color: grey;
 }
 
-    </style>
-
-
+.footer {
+  position: relative;
+  left: 0;
+  
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  clear: both;
+}
 
    
-
+</style>
 
 
    
@@ -152,7 +176,8 @@
 		
 		
 		<center>
-		<h1>
+		
+    <h1>
 			My Favourite Beaches
 			
 		</h1>  <!-- end of header --> 
@@ -175,8 +200,10 @@
 		
     
 		<p >
+      <div class = "center_text">	
 			<img src="Media/beach1.jpg" alt="Beautiful beach" width = "200px"> 
-		<div class = "center_text">	
+      
+		
 			ABOUT OUR BEACHES <br>
 			With beaches that sing and others that stun visitors with their pristine blend of rustic solitude and splendid red sand, Prince Edward Island's sandy expanses continue to receive raves from all over the world, including a nomination as one of Canada's natural wonders.
 			<br>
@@ -204,7 +231,9 @@
 			Others dream of returning. "PEI is the most beautiful, clean province we have seen, and the beaches are something us in Alberta only see in pictures," says Lori from Edmonton. Lori says she'll return for another PEI vacation soon. Such is the draw of PEI's beautiful beaches. And one thing is certain - she won't be alone.
 			
 		</p> <!-- end of center column -->
-		</div>
+    </div>
+		
+    <div class = "right">
 		
 		<p >
 			On our Island province you are never far from the ocean and one of our numerous spectacular beaches. From the red sand beaches on the south shore to the white sand beaches on the north shore, Prince Edward Island offers a variety of unique and enjoyable beach experiences
@@ -215,12 +244,13 @@
 			
 			
 		</p> <!-- end of right column -->
-		
-				
+		</div>
+		<div class="footer">		
 		<p >
 		   <a href="https://www.tourismpei.com/contact-us-page" target = "_blank" >Contact Us </a> 	
 		   2020 Prince Edward Island Tourism. All Rights Reserved.
 		</p> <!-- end of footer -->
+    </div>
 				
 	</body>
 
