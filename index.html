@@ -7,41 +7,203 @@
 			
 				
 		<title>My Favourite Beaches</title>
+    <style>
+    h1 {
+      font-align: center;
+      color: green;
+      background-color: rgb(255, 214, 255);
+      margin-top: 50px;
+
+    }
+
+
+    /* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#navbar {
+            position: fixed;
+            top: 220px;
+        }
+
+ 
+.links a:link{color: green;}  
+.links a:visited{color: blue;} 
+
+.links a:hover { 
+                background-color: rgb(255, 214, 255);
+}  
+.links a:active {		user is interacting with this element
+                background-color: rgb(255, 214, 255);
+} 
+
+.links{
+  overflow: hidden;
+  border: 1px  solid   red;	
+  margin: auto;
+  width: 200px;
+  height: 900px;
+  float: left;
+  clear: left;
+  
+}
+.center_text {
+  
+  float: left;
+  
+  border: 3px solid green;
+  padding: 10px;
+  width:300px;
+  height:900px;
+  overflow: scroll;
+  
+}
+.right{
+  overflow: hidden;
+  border: 1px  solid   red;	
+  margin: auto;
+  width: 200px;
+  height: 900px;
+  float: left;
+  clear: right;
+  background-color: grey;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  clear: both;
+}
+
+   
+</style>
+
+
+   
 	</head>
 
 	<body>
-		<p >
-				<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> Festivals and Events </a>
-				<a href="https://www.tourismpei.com/about-pei" target="_blank"> About PEI </a>
-				Planning a Trip:  <!-- make into a drop down -->
-					<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Vacation Packages</a>
-					<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
-					<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
-			
-		</p>  <!-- end of navigation bar -->
+
+    <div class="navbar">
+  <a href="https://www.tourismpei.com/pei-festivals-and-events">Festivals and events</a>
+  <a href="https://www.tourismpei.com/about-pei">About PEI</a>
+  <div class="dropdown">
+    <button class="dropbtn">Planning a trip
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.tourismpei.com/pei-package-offers">Vacation packages</a>
+      <a href="https://www.tourismpei.com/pei-accommodations">Where to stay</a>
+      <a href="https://www.tourismpei.com/pei-things-to-do">What to do</a>
+    </div>
+  </div>
+</div>
+
 		
 		
-		<p>
+		<center>
+		
+    <h1>
 			My Favourite Beaches
 			
-		</p>  <!-- end of header --> 
-		
-		
+		</h1>  <!-- end of header --> 
+		</center>
+		<div class = "links">
 		<p >
 			LINKS <br>  
 			<!-- Make Links into an unordered list -->
-			<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a>
-			<a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a>
-			<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a>
-			<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a>
-			<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a>
+      <ul>
 			
+      <li><a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a></li>
+			<li><a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a></li>
+			<li><a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a></li>
+			<li><a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a></li>
+			<li><a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a></li>
+			</ul>
+
 		</p> <!-- end of left column -->
+		</div>
 		
-		
+    
 		<p >
+      <div class = "center_text">	
 			<img src="Media/beach1.jpg" alt="Beautiful beach" width = "200px"> 
-			
+      
+		
 			ABOUT OUR BEACHES <br>
 			With beaches that sing and others that stun visitors with their pristine blend of rustic solitude and splendid red sand, Prince Edward Island's sandy expanses continue to receive raves from all over the world, including a nomination as one of Canada's natural wonders.
 			<br>
@@ -69,7 +231,9 @@
 			Others dream of returning. "PEI is the most beautiful, clean province we have seen, and the beaches are something us in Alberta only see in pictures," says Lori from Edmonton. Lori says she'll return for another PEI vacation soon. Such is the draw of PEI's beautiful beaches. And one thing is certain - she won't be alone.
 			
 		</p> <!-- end of center column -->
+    </div>
 		
+    <div class = "right">
 		
 		<p >
 			On our Island province you are never far from the ocean and one of our numerous spectacular beaches. From the red sand beaches on the south shore to the white sand beaches on the north shore, Prince Edward Island offers a variety of unique and enjoyable beach experiences
@@ -80,12 +244,13 @@
 			
 			
 		</p> <!-- end of right column -->
-		
-				
+		</div>
+		<div class="footer">		
 		<p >
 		   <a href="https://www.tourismpei.com/contact-us-page" target = "_blank" >Contact Us </a> 	
 		   2020 Prince Edward Island Tourism. All Rights Reserved.
 		</p> <!-- end of footer -->
+    </div>
 				
 	</body>
 
